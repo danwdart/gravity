@@ -1,0 +1,23 @@
+A set of gravity simulators.
+
+Mainly because I enjoyed writing them
+and I like the maths around it.
+
+Note that these 2D demos use the 3D Newtonian (classical) gravity mechanics model
+and not the 2D version.
+
+INSTRUCTIONS
+(1)
+Click on the screen and balls will bounce with a certain restitution, and will eventually just bounce down at the bottom of the screen.
+
+(2)
+Click on the screen for balls that will gravitationally orbit a point a little lower than the screen.
+
+(3)
+Left click to create a planet with little gravity. Middle click for a high-gravity star.
+Planets will orbit stars, stars in this version remain static.
+The whole thing might be more visible if you zoom your browser page out.
+
+Made by me, Dan Dart.
+Do what you want with this, apart from getting me in trouble for it killing your CPU.
+(Not optimised currently).
