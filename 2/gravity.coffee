@@ -64,10 +64,10 @@ class Ball
 	velocityX: -> @_velx
 	velocityY: -> @_vely
 	frame: ->
-		dy = @y() - gravXCtr 
-		dx = @x() - gravXCtr 
+		dy = @y() - gravXCtr
+		dx = @x() - gravXCtr
 		d2 = (Math.pow(dy, 2) + Math.pow(dx, 2))
-		d = Math.sqrt d2 
+		d = Math.sqrt d2
 		d2xp = dx / d
 		d2yp = dy / d
 		@gravX = d2xp * gravG * MCtr * @m / d2
@@ -76,7 +76,7 @@ class Ball
 		@_velx -= @gravX
 		this.setX(Math.floor this.x()+@_velx)
 		this.setY(Math.floor this.y()+@_vely)
-		#@_velx = -@_velx * @_restX if 0 >= this.x() or this.x() >= @el.clientWidth 
+		#@_velx = -@_velx * @_restX if 0 >= this.x() or this.x() >= @el.clientWidth
 		#@_vely = -@_vely * @_restY if 0 >= this.y() or this.y() >= @el.clientHeight
 	trace: ->
 		if traceLength <= @traces.length

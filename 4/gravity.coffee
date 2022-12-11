@@ -63,7 +63,7 @@ class GravitatingBody
 		newPosX = self.coords().x + self._velx
 		newPosY = self.coords().y + self._vely
 		self.moveTo newPosX, newPosY
-			#@_velx = -@_velx * @_restX if 0 >= this.x() or this.x() >= @el.clientWidth 
+			#@_velx = -@_velx * @_restX if 0 >= this.x() or this.x() >= @el.clientWidth
 			#@_vely = -@_vely * @_restY if 0 >= this.y() or this.y() >= @el.clientHeight
 	setPositionFromEvent : (event) ->
 			@_posY = event.clientY
@@ -107,7 +107,7 @@ $(document).ready ->
 		b.setPositionFromEvent e
 		b.build()
 		Space.objects.push b
-	
+
 	bh = new BlackHole
 	bh.setPositionMiddle()
 	bh.build()
